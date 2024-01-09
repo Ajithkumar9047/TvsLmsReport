@@ -1,0 +1,155 @@
+[
+  {
+    "description": "  We want to verify whether lead is inserted successfully",
+    "elements": [
+      {
+        "description": "",
+        "id": "is-lead-inserted;lead-is-inserted-successfully",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Lead is inserted successfully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 169791
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 177958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Post the correct lead",
+            "match": {
+              "location": "features/step_definitions/lead.js:110"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1832131875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I recieve a response",
+            "match": {
+              "location": "features/step_definitions/lead.js:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 449191707
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n \"message\": \"Success\",\n \"status\": 201\n}",
+                "line": 7
+              }
+            ],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features/step_definitions/lead.js:122"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2997208
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "is-lead-inserted;lead--insertion-failed",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Lead  insertion failed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41584
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 64750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "Post the fault lead",
+            "match": {
+              "location": "features/step_definitions/lead.js:105"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62696625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I recieve a response",
+            "match": {
+              "location": "features/step_definitions/lead.js:118"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 240405000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n \"message\":\"'brand_code' must be greater than '0'.\",\n \"status\": 400\n}",
+                "line": 17
+              }
+            ],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I expect the response as",
+            "match": {
+              "location": "features/step_definitions/lead.js:122"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 306499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "is-lead-inserted",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "is lead inserted",
+    "tags": [],
+    "uri": "features/is_lead_inserted.feature"
+  }
+]
