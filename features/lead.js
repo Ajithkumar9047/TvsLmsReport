@@ -601,7 +601,7 @@ Given('Post the Duplicate lead as Rejected lead', async function () {
     await spec.toss();
 });
 
-When('I recieve a response', async function () {
+When('I received a response', async function () {
     await spec.toss();
 })
 
