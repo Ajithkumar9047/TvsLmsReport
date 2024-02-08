@@ -6,14 +6,13 @@ Before(() => {
     spec = pactum.spec();
 });
 
-
 pactum.stash.addDataTemplate(
     {
         LeadPass:
         {
             "customeR_NAME": "Ajith",
             "dealeR_ID": "string",
-            "mobilE_NUMBER": "9047981343",
+            "mobilE_NUMBER": "1234567874",
             "emaiL_ID": "string",
             "enquirY_DATE": "2024-01-19 01:00:00.000",
             "city": "string",
@@ -25,9 +24,9 @@ pactum.stash.addDataTemplate(
             "source": "string",
             "sourcE_ID": 1,
             "area": "string",
-            "brand_code": 1,
-            "modeL_ID": "string",
-            "parT_ID": "string",
+            "brand_code": 4,
+            "modeL_ID": "000010000100000572",
+            "parT_ID": "ND1902404D",
             "customeR_VOICE": "string",
             "brancH_ID": "",
             "addresS_LINE1": "string",
@@ -73,9 +72,9 @@ pactum.stash.addDataTemplate(
             "source": "string",
             "sourcE_ID": 1,
             "area": "string",
-            "brand_code": 1,
-            "modeL_ID": "string",
-            "parT_ID": "string",
+            "brand_code": 4,
+            "modeL_ID": "000010000100000572",
+            "parT_ID": "ND1902404D",
             "customeR_VOICE": "string",
             "brancH_ID": "",
             "addresS_LINE1": "string",
@@ -107,9 +106,9 @@ pactum.stash.addDataTemplate(
     {
         InvalidMobilenumber:
         {
-            "customeR_NAME": "Ajith",
+            "customeR_NAME": "string",
             "dealeR_ID": "string",
-            "mobilE_NUMBER": "9047",
+            "mobilE_NUMBER": "123",
             "emaiL_ID": "string",
             "enquirY_DATE": "2024-01-19 01:00:00.000",
             "city": "string",
@@ -120,12 +119,12 @@ pactum.stash.addDataTemplate(
             "language_code": "string",
             "source": "string",
             "sourcE_ID": 1,
-            "area": "string",
-            "brand_code": 1,
-            "modeL_ID": "string",
-            "parT_ID": "string",
+            "area": "",
+            "brand_code": 4,
+            "modeL_ID": "000010000100000572",
+            "parT_ID": "ND1902404D",
             "customeR_VOICE": "string",
-            "brancH_ID": "",
+            "brancH_ID": "string",
             "addresS_LINE1": "string",
             "utm_term": "string",
             "utm_content": "string",
@@ -147,8 +146,7 @@ pactum.stash.addDataTemplate(
             "booking_amount": 0,
             "payment_status": "string",
             "is_crm_request": "string"
-        }
-
+          }
     }
 )
 pactum.stash.addDataTemplate(
@@ -157,7 +155,7 @@ pactum.stash.addDataTemplate(
         {
             "customeR_NAME": "",
             "dealeR_ID": "string",
-            "mobilE_NUMBER": "9047981343",
+            "mobilE_NUMBER": "1234567824",
             "emaiL_ID": "string",
             "enquirY_DATE": "2024-01-19 01:00:00.000",
             "city": "string",
@@ -169,9 +167,9 @@ pactum.stash.addDataTemplate(
             "source": "string",
             "sourcE_ID": 1,
             "area": "string",
-            "brand_code": 1,
-            "modeL_ID": "string",
-            "parT_ID": "string",
+            "brand_code": 4,
+            "modeL_ID": "000010000100000572",
+            "parT_ID": "ND1902404D",
             "customeR_VOICE": "string",
             "brancH_ID": "",
             "addresS_LINE1": "string",
@@ -204,7 +202,7 @@ pactum.stash.addDataTemplate(
         {
             "customeR_NAME": "Aj",
             "dealeR_ID": "string",
-            "mobilE_NUMBER": "9047981343",
+            "mobilE_NUMBER": "1234567820",
             "emaiL_ID": "string",
             "enquirY_DATE": "2024-01-19 01:00:00.000",
             "city": "string",
@@ -216,9 +214,9 @@ pactum.stash.addDataTemplate(
             "source": "string",
             "sourcE_ID": 1,
             "area": "string",
-            "brand_code": 1,
-            "modeL_ID": "string",
-            "parT_ID": "string",
+            "brand_code": 4,
+            "modeL_ID": "000010000100000572",
+            "parT_ID": "ND1902404D",
             "customeR_VOICE": "string",
             "brancH_ID": "",
             "addresS_LINE1": "string",
@@ -251,7 +249,7 @@ pactum.stash.addDataTemplate(
         {
             "customeR_NAME": "Ajith",
             "dealeR_ID": "string",
-            "mobilE_NUMBER": "9047981343",
+            "mobilE_NUMBER": "1234567823",
             "emaiL_ID": "string",
             "enquirY_DATE": "2024-01-19 01:00:00.000",
             "city": "string",
@@ -263,9 +261,9 @@ pactum.stash.addDataTemplate(
             "source": "string",
             "sourcE_ID": 0,
             "area": "string",
-            "brand_code": 1,
-            "modeL_ID": "string",
-            "parT_ID": "string",
+            "brand_code": 4,
+            "modeL_ID": "000010000100000572",
+            "parT_ID": "ND1902404D",
             "customeR_VOICE": "string",
             "brancH_ID": "",
             "addresS_LINE1": "string",
@@ -299,7 +297,7 @@ pactum.stash.addDataTemplate(
         {
             "customeR_NAME": "Ajith",
             "dealeR_ID": "string",
-            "mobilE_NUMBER": "9047981343",
+            "mobilE_NUMBER": "1234567823",
             "emaiL_ID": "2024-01-19 01:00:00.000",
             "enquirY_DATE": "string",
             "city": "string",
@@ -312,8 +310,8 @@ pactum.stash.addDataTemplate(
             "sourcE_ID": 1,
             "area": "string",
             "brand_code": 0,
-            "modeL_ID": "string",
-            "parT_ID": "string",
+            "modeL_ID": "000010000100000572",
+            "parT_ID": "ND1902404D",
             "customeR_VOICE": "string",
             "brancH_ID": "",
             "addresS_LINE1": "string",
@@ -347,7 +345,7 @@ pactum.stash.addDataTemplate(
         {
             "customeR_NAME": "Ajith",
             "dealeR_ID": "string",
-            "mobilE_NUMBER": "9047981343",
+            "mobilE_NUMBER": "1234567823",
             "emaiL_ID": "string",
             "enquirY_DATE": "2024-01-19 01:00:00.000",
             "city": "string",
@@ -359,9 +357,9 @@ pactum.stash.addDataTemplate(
             "source": "string",
             "sourcE_ID": 1,
             "area": "",
-            "brand_code": 1,
-            "modeL_ID": "string",
-            "parT_ID": "string",
+            "brand_code": 4,
+            "modeL_ID": "000010000100000572",
+            "parT_ID": "ND1902404D",
             "customeR_VOICE": "string",
             "brancH_ID": "",
             "addresS_LINE1": "string",
@@ -395,7 +393,7 @@ pactum.stash.addDataTemplate(
         {
             "customeR_NAME": "Ajith",
             "dealeR_ID": "",
-            "mobilE_NUMBER": "9047981343",
+            "mobilE_NUMBER": "1234567821",
             "emaiL_ID": "string",
             "enquirY_DATE": "2024-01-19 01:00:00.000",
             "city": "string",
@@ -407,9 +405,9 @@ pactum.stash.addDataTemplate(
             "source": "string",
             "sourcE_ID": 1,
             "area": "string",
-            "brand_code": 1,
-            "modeL_ID": "string",
-            "parT_ID": "string",
+            "brand_code": 4,
+            "modeL_ID": "000010000100000572",
+            "parT_ID": "ND1902404D",
             "customeR_VOICE": "string",
             "brancH_ID": "",
             "addresS_LINE1": "string",
@@ -437,14 +435,13 @@ pactum.stash.addDataTemplate(
 
     }
 )
-
 pactum.stash.addDataTemplate(
     {
         InvalidEnquirydate:
         {
             "customeR_NAME": "Ajith",
             "dealeR_ID": "string",
-            "mobilE_NUMBER": "9047981343",
+            "mobilE_NUMBER": "1234567877",
             "emaiL_ID": "string",
             "enquirY_DATE": "string",
             "city": "string",
@@ -456,9 +453,9 @@ pactum.stash.addDataTemplate(
             "source": "string",
             "sourcE_ID": 1,
             "area": "string",
-            "brand_code": 1,
-            "modeL_ID": "string",
-            "parT_ID": "string",
+            "brand_code": 4,
+            "modeL_ID": "000010000100000572",
+            "parT_ID": "ND1902404D",
             "customeR_VOICE": "string",
             "brancH_ID": "",
             "addresS_LINE1": "string",
@@ -494,7 +491,7 @@ pactum.stash.addDataTemplate(
             "dealeR_ID": "string",
             "mobilE_NUMBER": "9047981343",
             "emaiL_ID": "string",
-            "enquirY_DATE": "string",
+            "enquirY_DATE": "2024-01-19 01:00:00.000",
             "city": "string",
             "utm_source": "string",
             "utm_medium": "string",
@@ -502,11 +499,251 @@ pactum.stash.addDataTemplate(
             "gclid": "string",
             "language_code": "string",
             "source": "string",
-            "sourcE_ID": 0,
+            "sourcE_ID": 1,
             "area": "string",
-            "brand_code": 0,
-            "modeL_ID": "string",
-            "parT_ID": "string",
+            "brand_code": 4,
+            "modeL_ID": "000010000100000572",
+            "parT_ID": "ND1902404D",
+            "customeR_VOICE": "string",
+            "brancH_ID": "",
+            "addresS_LINE1": "string",
+            "utm_term": "string",
+            "utm_content": "string",
+            "parm1": "string",
+            "parm2": "string",
+            "parm3": "string",
+            "parm4": "string",
+            "parm5": "string",
+            "customeR_STATE": "string",
+            "finance": "string",
+            "pincode": "string",
+            "finance_Company": "string",
+            "intentforPurchase": "string",
+            "device": "string",
+            "crM_INTERNET_ENQUIRY_ID": "string",
+            "transactionId": "string",
+            "category": "string",
+            "payment_type": "string",
+            "booking_amount": 0,
+            "payment_status": "string",
+            "is_crm_request": "string"
+        }
+        
+    }
+)
+pactum.stash.addDataTemplate(
+    {
+        modeL_IDEmpty:
+        {
+            "customeR_NAME": "Ajith",
+            "dealeR_ID": "string",
+            "mobilE_NUMBER": "1234567874",
+            "emaiL_ID": "string",
+            "enquirY_DATE": "2024-01-19 01:00:00.000",
+            "city": "string",
+            "utm_source": "string",
+            "utm_medium": "string",
+            "utm_campaign": "string",
+            "gclid": "string",
+            "language_code": "string",
+            "source": "string",
+            "sourcE_ID": 1,
+            "area": "string",
+            "brand_code": 1,
+            "modeL_ID": " ",
+            "parT_ID": "ND1902404D",
+            "customeR_VOICE": "string",
+            "brancH_ID": "",
+            "addresS_LINE1": "string",
+            "utm_term": "string",
+            "utm_content": "string",
+            "parm1": "string",
+            "parm2": "string",
+            "parm3": "string",
+            "parm4": "string",
+            "parm5": "string",
+            "customeR_STATE": "string",
+            "finance": "string",
+            "pincode": "string",
+            "finance_Company": "string",
+            "intentforPurchase": "string",
+            "device": "string",
+            "crM_INTERNET_ENQUIRY_ID": "string",
+            "transactionId": "string",
+            "category": "string",
+            "payment_type": "string",
+            "booking_amount": 0,
+            "payment_status": "string",
+            "is_crm_request": "string"
+        }
+        
+    }
+)
+pactum.stash.addDataTemplate(
+    {
+        modeLID_Invalid:
+        {
+            "customeR_NAME": "Ajith",
+            "dealeR_ID": "string",
+            "mobilE_NUMBER": "1234567874",
+            "emaiL_ID": "string",
+            "enquirY_DATE": "2024-01-19 01:00:00.000",
+            "city": "string",
+            "utm_source": "string",
+            "utm_medium": "string",
+            "utm_campaign": "string",
+            "gclid": "string",
+            "language_code": "string",
+            "source": "string",
+            "sourcE_ID": 1,
+            "area": "string",
+            "brand_code": 1,
+            "modeL_ID": "0000111000",
+            "parT_ID": "ND1902404D",
+            "customeR_VOICE": "string",
+            "brancH_ID": "",
+            "addresS_LINE1": "string",
+            "utm_term": "string",
+            "utm_content": "string",
+            "parm1": "string",
+            "parm2": "string",
+            "parm3": "string",
+            "parm4": "string",
+            "parm5": "string",
+            "customeR_STATE": "string",
+            "finance": "string",
+            "pincode": "string",
+            "finance_Company": "string",
+            "intentforPurchase": "string",
+            "device": "string",
+            "crM_INTERNET_ENQUIRY_ID": "string",
+            "transactionId": "string",
+            "category": "string",
+            "payment_type": "string",
+            "booking_amount": 0,
+            "payment_status": "string",
+            "is_crm_request": "string"
+        }
+        
+    }
+)
+pactum.stash.addDataTemplate(
+    {
+        PartId_Empty:
+        {
+            "customeR_NAME": "Ajith",
+            "dealeR_ID": "string",
+            "mobilE_NUMBER": "1234567874",
+            "emaiL_ID": "string",
+            "enquirY_DATE": "2024-01-19 01:00:00.000",
+            "city": "string",
+            "utm_source": "string",
+            "utm_medium": "string",
+            "utm_campaign": "string",
+            "gclid": "string",
+            "language_code": "string",
+            "source": "string",
+            "sourcE_ID": 1,
+            "area": "string",
+            "brand_code": 4,
+            "modeL_ID": "000010000100000572",
+            "parT_ID": "",
+            "customeR_VOICE": "string",
+            "brancH_ID": "",
+            "addresS_LINE1": "string",
+            "utm_term": "string",
+            "utm_content": "string",
+            "parm1": "string",
+            "parm2": "string",
+            "parm3": "string",
+            "parm4": "string",
+            "parm5": "string",
+            "customeR_STATE": "string",
+            "finance": "string",
+            "pincode": "string",
+            "finance_Company": "string",
+            "intentforPurchase": "string",
+            "device": "string",
+            "crM_INTERNET_ENQUIRY_ID": "string",
+            "transactionId": "string",
+            "category": "string",
+            "payment_type": "string",
+            "booking_amount": 0,
+            "payment_status": "string",
+            "is_crm_request": "string"
+        }
+        
+    }
+)
+pactum.stash.addDataTemplate(
+    {
+        PartId_invalid:
+        {
+            "customeR_NAME": "Ajith",
+            "dealeR_ID": "string",
+            "mobilE_NUMBER": "1234567874",
+            "emaiL_ID": "string",
+            "enquirY_DATE": "2024-01-19 01:00:00.000",
+            "city": "string",
+            "utm_source": "string",
+            "utm_medium": "string",
+            "utm_campaign": "string",
+            "gclid": "string",
+            "language_code": "string",
+            "source": "string",
+            "sourcE_ID": 1,
+            "area": "string",
+            "brand_code": 4,
+            "modeL_ID": "000010000100000572",
+            "parT_ID": "ND190",
+            "customeR_VOICE": "string",
+            "brancH_ID": "",
+            "addresS_LINE1": "string",
+            "utm_term": "string",
+            "utm_content": "string",
+            "parm1": "string",
+            "parm2": "string",
+            "parm3": "string",
+            "parm4": "string",
+            "parm5": "string",
+            "customeR_STATE": "string",
+            "finance": "string",
+            "pincode": "string",
+            "finance_Company": "string",
+            "intentforPurchase": "string",
+            "device": "string",
+            "crM_INTERNET_ENQUIRY_ID": "string",
+            "transactionId": "string",
+            "category": "string",
+            "payment_type": "string",
+            "booking_amount": 0,
+            "payment_status": "string",
+            "is_crm_request": "string"
+        }
+        
+    }
+)
+pactum.stash.addDataTemplate(
+    {
+        InvalidBrandID:
+        {
+            "customeR_NAME": "Ajith",
+            "dealeR_ID": "string",
+            "mobilE_NUMBER": "1234567874",
+            "emaiL_ID": "string",
+            "enquirY_DATE": "2024-01-19 01:00:00.000",
+            "city": "string",
+            "utm_source": "string",
+            "utm_medium": "string",
+            "utm_campaign": "string",
+            "gclid": "string",
+            "language_code": "string",
+            "source": "string",
+            "sourcE_ID": 1,
+            "area": "string",
+            "brand_code": 6,
+            "modeL_ID": "000010000100000572",
+            "parT_ID": "ND1902404D",
             "customeR_VOICE": "string",
             "brancH_ID": "",
             "addresS_LINE1": "string",
@@ -589,18 +826,47 @@ Given('Post the  DealerId is empty as Missed lead', async function () {
     await spec.toss();
 });
 Given('Post the Invalid Enquiry Date as Rejected lead', async function () {
-    spec["POST".toLowerCase()]("/TvsEmsDmsCommonDropLeads");
+    spec["POST".toLowerCase()]("/api/lead");
     spec.withJson({ '@DATA:TEMPLATE@': "InvalidEnquirydate" });
     spec.withHeaders('Authorization', '406557EB82E651EE239EE47956DAD519ED196899F482AE417C31473DA234842BBB5206266F5F6846EE0E729DBEF23999126E6A7009648004DF0B2E134517A6CC')
     await spec.toss();
 });
 Given('Post the Duplicate lead as Rejected lead', async function () {
-    spec["POST".toLowerCase()]("/TvsEmsDmsCommonDropLeads");
+    spec["POST".toLowerCase()]("/api/lead");
     spec.withJson({ '@DATA:TEMPLATE@': "DuplicateLead" });
     spec.withHeaders('Authorization', '406557EB82E651EE239EE47956DAD519ED196899F482AE417C31473DA234842BBB5206266F5F6846EE0E729DBEF23999126E6A7009648004DF0B2E134517A6CC')
     await spec.toss();
 });
-
+Given('Post the Invalid ModelID as Rejected lead', async function () {
+    spec["POST".toLowerCase()]("/api/lead");
+    spec.withJson({ '@DATA:TEMPLATE@': "modeLID_Invalid" });
+    spec.withHeaders('Authorization', '406557EB82E651EE239EE47956DAD519ED196899F482AE417C31473DA234842BBB5206266F5F6846EE0E729DBEF23999126E6A7009648004DF0B2E134517A6CC')
+    await spec.toss();
+});
+Given('Post the ModelID is empty as Missed lead', async function () {
+    spec["POST".toLowerCase()]("/api/lead");
+    spec.withJson({ '@DATA:TEMPLATE@': "modeL_IDEmpty" });
+    spec.withHeaders('Authorization', '406557EB82E651EE239EE47956DAD519ED196899F482AE417C31473DA234842BBB5206266F5F6846EE0E729DBEF23999126E6A7009648004DF0B2E134517A6CC')
+    await spec.toss();
+});
+Given('Post the PartID is empty as Missed lead', async function () {
+    spec["POST".toLowerCase()]("/api/lead");
+    spec.withJson({ '@DATA:TEMPLATE@': "PartId_Empty" });
+    spec.withHeaders('Authorization', '406557EB82E651EE239EE47956DAD519ED196899F482AE417C31473DA234842BBB5206266F5F6846EE0E729DBEF23999126E6A7009648004DF0B2E134517A6CC')
+    await spec.toss();
+});
+Given('Post the Invalid PartID as Rejected lead', async function () {
+    spec["POST".toLowerCase()]("/api/lead");
+    spec.withJson({ '@DATA:TEMPLATE@': "PartId_invalid" });
+    spec.withHeaders('Authorization', '406557EB82E651EE239EE47956DAD519ED196899F482AE417C31473DA234842BBB5206266F5F6846EE0E729DBEF23999126E6A7009648004DF0B2E134517A6CC')
+    await spec.toss();
+});
+Given('Post the Invalid brand code as Rejected lead', async function () {
+    spec["POST".toLowerCase()]("/api/lead");
+    spec.withJson({ '@DATA:TEMPLATE@': "InvalidBrandID" });
+    spec.withHeaders('Authorization', '406557EB82E651EE239EE47956DAD519ED196899F482AE417C31473DA234842BBB5206266F5F6846EE0E729DBEF23999126E6A7009648004DF0B2E134517A6CC')
+    await spec.toss();
+});
 When('I received a response', async function () {
     await spec.toss();
 })
