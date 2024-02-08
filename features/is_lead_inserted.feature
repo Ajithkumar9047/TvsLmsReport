@@ -1,44 +1,44 @@
 Feature:As a scheduler I want to check the Success, Missing data and Rejected leads from a Lead source
-   Scenario: Should verify the valid lead is inserted successfully.
+   Scenario: Should verify successful insertion of a valid lead
       Given Post the correct lead as Accepted Lead
-      When I received a response
-         Then I expect the response as
+      When the lead is submitted to the system via the designated endpoint
+         Then the system should respond with:
          """
          {
          "message": "Success"
          }
          """
-   Scenario: Should verify the lead has been rejected as the mobile number is missing.
+   Scenario: Verify Lead Rejection Due to Missing Mobile Number
       Given Post the Mobile no is empty as Missed lead
-      When I received a response
-         Then I expect the response as
+      When the lead is submitted to the system via the designated endpoint
+      Then the system should respond with:
          """
          {
          "message":"INVALID_MOBILE_NUMBER"
          }
          """
-   Scenario: Should verify the lead has been rejected as an invalid mobile number.
+   Scenario: Should verify Lead Rejection Due to invalid mobile number.
       Given Post the Mobile no as Rejected lead
-      When I received a response
-         Then I expect the response as
+      When the lead is submitted to the system via the designated endpoint
+         Then the system should respond with:
          """
          {
          "message":"INVALID_MOBILE_NUMBER"
          }
          """
-   Scenario: Should verify the lead has been rejected as the Customer Name is missing.
+   Scenario: Should verify Lead Rejection Due to Missing Customer Name .
       Given Post the Name is empty as Missed lead
-      When I received a response
-         Then I expect the response as
+      When the lead is submitted to the system via the designated endpoint
+         Then the system should respond with:
          """
          {
          "message": "'CUSTOME R_ NAME' must not be empty.~Invalid/Missing Customer Name"
          }
          """
-   Scenario: Should verify the lead has been rejected as an invalid Customer Name.
+   Scenario: Should verify Lead Rejection Due to invalid Customer Name.
       Given Post the Invalid Name as Rejected lead
-      When I received a response
-         Then I expect the response as
+      When the lead is submitted to the system via the designated endpoint
+         Then the system should respond with:
          """
          {
          "message": "Invalid/Missing Customer Name"
@@ -46,8 +46,8 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
          """
    Scenario: Should verify the lead has been rejected as an invalid  Source Id.
       Given Post the Invalid SourceId as Rejected lead
-      When I received a response
-         Then I expect the response as
+      When the lead is submitted to the system via the designated endpoint
+         Then the system should respond with:
          """
          {
          "message": "INVALID_SOURCE"
@@ -55,8 +55,8 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
          """
    Scenario: Should verify the lead has been rejected as the Brand Code is missing.
       Given Post the Brand Code is empty as Missed lead
-      When I received a response
-         Then I expect the response as
+      When the lead is submitted to the system via the designated endpoint
+         Then the system should respond with:
          """
          {
          "message": "INVALID_BRAND_CODE"
@@ -65,8 +65,8 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
 
    Scenario: Should verify the lead has been rejected as the Dealer Id is missing.
       Given Post the  DealerId is empty as Missed lead
-      When I received a response
-         Then I expect the response as
+      When the lead is submitted to the system via the designated endpoint
+         Then the system should respond with:
          """
          {
          "message": "Invalid/missing Dealer_id"
@@ -74,8 +74,8 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
          """
    Scenario: Should verify the lead has been rejected as an invalid Enquiry Date.
       Given Post the Invalid Enquiry Date as Rejected lead
-      When I received a response
-         Then I expect the response as
+      When the lead is submitted to the system via the designated endpoint
+         Then the system should respond with:
          """
          {
          "message": "Invalid/missing Enquiry Date"
@@ -83,8 +83,8 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
          """
    # Scenario: Should verify the lead has been rejected as it has been inserted five times.
    #    Given Post the Duplicate lead as Rejected lead
-   #    When I received a response
-   #       Then I expect the response as
+   #    When the lead is submitted to the system via the designated endpoint
+   #       Then the system should respond with:
    #       """
    #       {
    #       "message": "TOO_MANY_REQUEST_FROM_SAME_MOBILE_NUMBER"
@@ -93,8 +93,8 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
 
       # Scenario: Should verify the lead has been rejected as the Area is missing.
    #    Given Post the Area is empty as Missed lead
-   #    When I received a response
-   #       Then I expect the response as
+   #    When the lead is submitted to the system via the designated endpoint
+   #       Then the system should respond with:
    #       """
    #       {
    #       "message": "Invalid/Missing customer pincode"
@@ -102,8 +102,8 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
    #       """
    Scenario: Should verify the lead has been rejected as an invalid modelId.
       Given Post the Invalid ModelID as Rejected lead
-      When I received a response
-         Then I expect the response as
+      When the lead is submitted to the system via the designated endpoint
+         Then the system should respond with:
          """
          {
          "message": "INVALID_MODEL_ID_AND_PART_ID"
@@ -111,8 +111,8 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
          """
    Scenario: Should verify the lead has been rejected as the ModelID is missing.
       Given Post the ModelID is empty as Missed lead
-      When I received a response
-         Then I expect the response as
+      When the lead is submitted to the system via the designated endpoint
+         Then the system should respond with:
          """
          {
          "message":"INVALID_MODEL_ID_AND_PART_ID"
@@ -120,8 +120,8 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
          """
    Scenario: Should verify the lead has been rejected as an invalid PartId.
       Given Post the Invalid PartID as Rejected lead
-      When I received a response
-         Then I expect the response as
+      When the lead is submitted to the system via the designated endpoint
+         Then the system should respond with:
          """
          {
          "message": "INVALID_MODEL_ID_AND_PART_ID"
@@ -129,8 +129,8 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
          """
    Scenario: Should verify the lead has been rejected as the PartID is missing.
       Given Post the PartID is empty as Missed lead
-      When I received a response
-         Then I expect the response as
+      When the lead is submitted to the system via the designated endpoint
+         Then the system should respond with:
          """
          {
          "message":"INVALID_MODEL_ID_AND_PART_ID"
@@ -138,8 +138,8 @@ Feature:As a scheduler I want to check the Success, Missing data and Rejected le
          """
       Scenario: Should verify the lead has been rejected as an invalid Brand Code.
       Given Post the Invalid brand code as Rejected lead
-      When I received a response
-         Then I expect the response as
+      When the lead is submitted to the system via the designated endpoint
+         Then the system should respond with:
          """
          {
          "message": "INVALID_MODEL_ID_AND_PART_ID"
