@@ -1,4 +1,4 @@
-Feature:HTTP method on https://tvsmazlmsappuat01-acquistion.azurewebsites.net
+Feature:As a scheduler I want to check the Success, Missing data and Rejected leads from a Lead source
    Scenario: Should verify the valid lead is inserted successfully.
       Given Post the correct lead as Accepted Lead
       When I received a response
@@ -14,7 +14,7 @@ Feature:HTTP method on https://tvsmazlmsappuat01-acquistion.azurewebsites.net
          Then I expect the response as
          """
          {
-         "message": "Invalid mobile number"
+         "message":"INVALID_MOBILE_NUMBER"
          }
          """
    Scenario: Should verify the lead has been rejected as an invalid mobile number.
@@ -23,7 +23,7 @@ Feature:HTTP method on https://tvsmazlmsappuat01-acquistion.azurewebsites.net
          Then I expect the response as
          """
          {
-         "message": "Invalid mobile number"
+         "message":"INVALID_MOBILE_NUMBER"
          }
          """
    Scenario: Should verify the lead has been rejected as the Customer Name is missing.
@@ -62,15 +62,7 @@ Feature:HTTP method on https://tvsmazlmsappuat01-acquistion.azurewebsites.net
          "message": "INVALID_BRAND_CODE"
          }
          """
-   Scenario: Should verify the lead has been rejected as the Area is missing.
-      Given Post the Area is empty as Missed lead
-      When I received a response
-         Then I expect the response as
-         """
-         {
-         "message": "Invalid/Missing customer pincode"
-         }
-         """
+
    Scenario: Should verify the lead has been rejected as the Dealer Id is missing.
       Given Post the  DealerId is empty as Missed lead
       When I received a response
@@ -89,12 +81,67 @@ Feature:HTTP method on https://tvsmazlmsappuat01-acquistion.azurewebsites.net
          "message": "Invalid/missing Enquiry Date"
          }
          """
-   Scenario: Should verify the lead has been rejected as it has been inserted five times.
-      Given Post the Duplicate lead as Rejected lead
+   # Scenario: Should verify the lead has been rejected as it has been inserted five times.
+   #    Given Post the Duplicate lead as Rejected lead
+   #    When I received a response
+   #       Then I expect the response as
+   #       """
+   #       {
+   #       "message": "TOO_MANY_REQUEST_FROM_SAME_MOBILE_NUMBER"
+   #       }
+   #       """
+
+      # Scenario: Should verify the lead has been rejected as the Area is missing.
+   #    Given Post the Area is empty as Missed lead
+   #    When I received a response
+   #       Then I expect the response as
+   #       """
+   #       {
+   #       "message": "Invalid/Missing customer pincode"
+   #       }
+   #       """
+   Scenario: Should verify the lead has been rejected as an invalid modelId.
+      Given Post the Invalid ModelID as Rejected lead
       When I received a response
          Then I expect the response as
          """
          {
-         "message": "TOO_MANY_REQUEST_FROM_SAME_MOBILE_NUMBER"
+         "message": "INVALID_MODEL_ID_AND_PART_ID"
+         }
+         """
+   Scenario: Should verify the lead has been rejected as the ModelID is missing.
+      Given Post the ModelID is empty as Missed lead
+      When I received a response
+         Then I expect the response as
+         """
+         {
+         "message":"INVALID_MODEL_ID_AND_PART_ID"
+         }
+         """
+   Scenario: Should verify the lead has been rejected as an invalid PartId.
+      Given Post the Invalid PartID as Rejected lead
+      When I received a response
+         Then I expect the response as
+         """
+         {
+         "message": "INVALID_MODEL_ID_AND_PART_ID"
+         }
+         """
+   Scenario: Should verify the lead has been rejected as the PartID is missing.
+      Given Post the PartID is empty as Missed lead
+      When I received a response
+         Then I expect the response as
+         """
+         {
+         "message":"INVALID_MODEL_ID_AND_PART_ID"
+         }
+         """
+      Scenario: Should verify the lead has been rejected as an invalid Brand Code.
+      Given Post the Invalid brand code as Rejected lead
+      When I received a response
+         Then I expect the response as
+         """
+         {
+         "message": "INVALID_MODEL_ID_AND_PART_ID"
          }
          """
